@@ -1,0 +1,59 @@
+Here's a little something that will help in spotting problems
+with the addition of new features...
+
+
+
+
+1) Take a known good mp3, and run:
+
+md5sum <mp3_file.mp3>
+
+Then run mp3_check -a -sf <mp3_file.mp3> > <new_mp3.mp3>
+
+They should be the same (by comparing the md5sums of both mp3s).
+
+This will try to fix an already good mp3, and thus should 
+not make any changes.
+
+** Especially with VBR files.
+
+
+
+
+
+2) Take a known good mp3, cut it in half, and add some junk
+in the center (dd if=/dev/zero of=junk bc=2000) and glue it all
+back (with the junk in the middle).
+
+Then run mp3_check -a -sf <mp3_file.mp3> > <new_mp3.mp3>
+
+I would like it to be able to strip out the junk, and return
+the original mp3, but I don't think it works quite yet.
+
+Anyone willing to take a look at this? :)
+
+
+** Especially with VBR files.
+
+
+
+
+
+3) Take a known good mp3, and run:
+
+md5sum <mp3_file.mp3>
+
+Then run mp3_check -a -s <mp3_file.mp3> > <new_mp3.mp3>
+
+They should be the same (without fixing anything).
+
+
+
+
+
+
+
+
+Any other tests are welcome. :)
+
+-Eric

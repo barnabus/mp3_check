@@ -1,0 +1,17 @@
+Here's a not so complete wish list that I think would be nice:
+
+1) Improvements to the frame checking logic?
+
+2) crc16 checking/adding of the frame would also be nice since I am able to
+retrieve the 'protection bit' from the frame.
+
+3) id3v2 support and analysis.
+
+Any additional requests, please send them to me at ericb@thedeepsky.com.
+ Thanks for all the e-mails from you out there for how you are using mp3_check.
+I really enjoy hearing from you. KEEP THEM COMING!!! :)
+
+
+I would really like to get your testimonials of how you are using it. :)
+
+-Eric

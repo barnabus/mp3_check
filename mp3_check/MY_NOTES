@@ -1,0 +1,40 @@
+2.0
+mp3_check no longer behaves like 'cat'- now requires a '-' to 
+designate stdin. Without any options, a usage message comes up
+which will help people new to the software (where it would
+automatically assume stdin, and not return an error).
+
+1.98
+Fixed a memory deallocation problem. Thanks to the Debian crew for
+pointing this out.
+
+1.95 
+Now is able to grab the 2 CRC bytes, and display them per frame.
+
+Checking of contiguous frames now happens. You can set what the mininum
+is by using the '-q' option.
+
+Got rid of all the loose variables, grouped them together and then put
+them into structures for easier management. Other logic improvements.
+
+1.9
+
+I am not sure why I didn't include this one. Ug.
+
+1.8
+
+Added a -e option to control the behavior of how errors are generated when
+an id3v2 tag is found. Made some changes to the print_usage() function that
+hopefully corrects problems on some systems. Added preliminary id3v2 support,
+and hopefully soon id3v2 analysis. I hear this is a big job. :-/
+
+The BSDs should be able to compile mp3_check with no problems now. Please note
+that to do this, you have to run 'make bsd_install'. Take a look at the Makefile
+if you have any questions.
+
+
+1.7 
+
+Added a -p option.
+Fixed obscure flag combination that would cause '-b' not to work correctly.
+Other general code cleanup. Nothing really special.

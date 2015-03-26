@@ -1,0 +1,21 @@
+## TO GET THE HELP FILE, run 'mp3_check -h', otherwise it will seem
+## to hang (it is listening to stdin).
+
+This program is pretty straight forward. Simply do:
+
+1) make
+2) make install
+
+Program output can be tweaked a little for easier reading, but the
+most important thing is that it gives you the data to see if the 
+mp3 is good or not.
+
+Comments are encouraged.  If you use this program, send me an e-mail,
+and tell me what you think, and where it can be improved. Keep in mind,
+I don't mind suggestions, but if you got a possible solution, that is 
+even better. :)
+
+-Eric
+eric.bullen@gmail.com
+
+p.s. I have included the .spec file so you can create your own .src.rpm files.

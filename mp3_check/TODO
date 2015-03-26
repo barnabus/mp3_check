@@ -1,0 +1,7 @@
+Here's a TODO list for future versions:
+
+1) Extensive id3v2 support. I would kinda like to have it all self-contained, but there's some excellent libraries out there like id3lib that could be used. Opinions anyone???
+
+Note: There is now preliminary ID3v2 support, but it is only a shell (It can only identify the CRC bytes). You can view the CRC information by adding the '-vv' option. Still need some help on this one.
+
+2) There may be a problem with 'fixing' VBR files. Anyone else have any bad experiences? I guess mpg123 doesn't like it when mp3_check fixed the VBR mp3, although I am inclined to think that it may be a problem with mpg123...

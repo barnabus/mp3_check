@@ -1,0 +1,26 @@
+For anyone that would like to contribute, I have a few goals that I have
+set for myself that may want to be something that would continue. Of
+course, these rules are not set in stone, and if justification warrants
+it, it can certainly change.  :)
+
+Anyway, here it is (in order of imporance):
+
+1) Accuracy is paramount- "probably" or "close enough" just doesn't
+really cut it even if a speed hit is the result.
+
+2) Clean and readable code.
+
+The reason for this is obvious- if it is easy to read and well commented,
+then it is easier to debug and add cool features.
+
+3) Short-cuts and hacks to increase speed should be handled carefully. The
+reason is the same as #2...
+
+4) Modularization. Try to keep it where it's one funtion to one task. The
+reason is also the same as #2. Yes, putting stuff in funtions does slow
+things down, but compilers do have options to minimize this...
+
+
+That's it.
+
+-E

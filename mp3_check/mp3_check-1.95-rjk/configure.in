@@ -1,0 +1,67 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(mp3_check.c)
+dnl This is the only place where the package version appears
+AM_INIT_AUTOMAKE(mp3_check, 1.95-rjk)
+AM_CONFIG_HEADER(config.h)
+
+AC_SUBST(VERSION)
+
+dnl Checks for programs.
+AC_PROG_CC
+AC_PROG_INSTALL
+
+dnl Checks for libraries.
+dnl Replace `main' with a function in -lgnugetopt:
+AC_CHECK_LIB(gnugetopt, getopt,
+  [LIBS="$LIBS -lgnugetopt"])
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS(sys/time.h unistd.h string.h)
+AC_CHECK_HEADERS(locale.h getopt.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_C_INLINE
+AC_HEADER_TIME
+AC_STRUCT_TM
+
+dnl Checks for library functions.
+AC_FUNC_MEMCMP
+AC_CHECK_FUNC(getopt)
+
+dnl Add the warnings if we have the GNU C compiler
+rm -f conftest*
+
+case "$GCC" in
+ yes)
+   CFLAGS="$CFLAGS -Wall"
+   CFLAGS="$CFLAGS -Wshadow"
+   CFLAGS="$CFLAGS -Wcast-qual"
+   CFLAGS="$CFLAGS -Wstrict-prototypes"
+   CFLAGS="$CFLAGS -Wmissing-prototypes"
+   CFLAGS="$CFLAGS -Wmissing-declarations"
+   CFLAGS="$CFLAGS -Wredundant-decls"
+   CFLAGS="$CFLAGS -Wpointer-arith"
+   CFLAGS="$CFLAGS -Waggregate-return"
+   CFLAGS="$CFLAGS -Wnested-externs"
+
+   AC_CACHE_CHECK(whether ${CC-cc} -pipe works, ac_cv_prog_cc_pipe,
+   [echo 'void f(){}' > conftest.c
+   if test -z "`${CC-cc} -pipe -c conftest.c 2>&1`" -a -s conftest.o; then
+     ac_cv_prog_cc_pipe=yes
+   else
+     ac_cv_prog_cc_pipe=no
+   fi
+   rm -f conftest*
+   ])
+
+   case "$ac_cv_prog_cc_pipe" in
+    yes)
+      CFLAGS="$CFLAGS -pipe"
+      ;;
+   esac
+   ;;
+esac
+
+AC_OUTPUT(Makefile)

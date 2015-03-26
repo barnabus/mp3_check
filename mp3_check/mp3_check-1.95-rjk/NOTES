@@ -1,0 +1,8 @@
+With a valid mp3 with no id3 tag, using the -a -sf flags will give you
+an identical mp3.  However not using the -sf flag, but instead using
+the -s flag will give you a much smaller mp3 (This should be fixed).
+
+
+By default -sf will strip the id3 tag off, but if you want it, use the
+-i tag, and a fresh one will be created for you.
+

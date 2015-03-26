@@ -1,0 +1,37 @@
+## TO GET THE HELP FILE, run 'mp3_check -h', otherwise it will seem
+## to hang (it is listening to stdin).
+
+===================================
+Official mp3_check website is located on SourceForge. Here's the URL:
+
+https://sourceforge.net/project/?group_id=6126
+
+
+Thanks go to the SourceForge staff for making such an awesome
+service available for the community!
+
+===================================
+This program is pretty straight forward. Simply do:
+
+1) tar zxfv mp3_check-<version>.tar.gz
+2) cd mp3_check-<version>
+3) make
+4) make install
+
+Program output can be tweaked a little for easier reading, but the
+most important thing is that it gives you the data to see if the 
+mp3 is good or not.
+
+Comments are encouraged.  If you use this program, send me an e-mail,
+and tell me what you think, and where it can be improved. Keep in mind,
+I don't mind suggestions, but if you got a possible solution, that is 
+even better. :)
+
+-Eric
+ericb@thedeepsky.com
+
+p.s. I have included the .spec file so you can create your own .src.rpm files.
+
+The master ftp archive for new versions is:
+
+ftp://ftp.thedeepsky.com/outgoing/

@@ -1,0 +1,35 @@
+Hello Fellow Developer!
+
+Two key areas need alot of help to keep mp3_check from having future
+difficulty they are as follows:
+
+1) It is becoming more and more difficult to analyze the mp3 when it is
+coming from two different sources (ie. either a stream or a file). I
+have made initial steps to providing that framework to help you get
+started. What I planned on is that to create a buffer that can store
+the entire mp3 frame, then analyze the buffer (easier to seek back and
+forth). I think this is key for doing CRC and other types of analysis.
+
+2) I know I had already mentioned CRC checking, but I would like to take
+it one step further. I would like to be able to add the CRC16 checksum
+into a mp3 file after the file has already been completed. I feel this
+would be a nice touch. If #1 above could be done, this would be quite
+easy to do.
+
+I had a hard time finding a CRC16 checksum algorithm written in C, but
+I finally did, and it is now included in the source. I have tested the
+code, and it works correctly.
+
+I have alot of comments in the code, so it should help guide you.
+
+p.s. Because I spend too much time working, I have a hard time keeping up
+with my e-mail. If you would like to correspond with other developers,
+please take advantage of the mp3_check ksite at sourceforge by going to
+https://sourceforge.net/project/?group_id=6126. If you have questions
+for me, plese send me an e-mail.
+
+Thanks in advance for any help you can provide,
+
+Sincerely,
+
+Eric Bullen ericb@thedeepsky.com

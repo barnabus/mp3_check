@@ -1,0 +1,47 @@
+These are the people that were nice enough to send me their patches
+and improvements. If you can't code, you can still help by
+trying to find any problems that I didn't catch. Also, tell me
+how you are using it in your daily activities. :)
+====================================================================
+
+Sun 4-Jun-00: Thanks go to charles <charles@source.rebelbase.com> for his
+patch to dynamically check to see if the stream is coming from stdin or
+from a file. This yields a HUGE speed improvement. My tests show it 
+shaves about 88% of the time to check an mp3. 
+
+Thu 25-May-00: Thanks go to Steven Wilcoxon <swilcoxon@uswest.net> for 
+laying the groundwork for support of id3v2. He also corrected the last 
+of my really bad english slang spellings. :)
+
+Thu 25-May-00: Thaks go to Zach Zurflu <zack@pabst.bendnet.com> for 
+making the FreeBSD port possible. 
+
+Tue 23-May-00: Thanks to Zach Zurflu <zack@pabst.bendnet.com> for
+pointing out some issues with the command-line options. Because
+of this, I was able to spot some other code-cleanups (related to
+the command-line options) to make things run even more predictable.
+
+Mon 15-May-00: Thanks to Charles Kerr <charles@superpimp.org> for
+his patch to make mp3_check more portable by removing dependencies
+for GNU libc. Should work great under Solaris now. Also, he shaved
+~10% off the time it takes to analyze an mp3.
+
+Sun 14-May-00: Thanks to Adam Bernstein <no6@pobox.com> for his
+contributions for detecting a bug when determining VBR sample rates in
+long mp3s and supplying a patch.
+
+Mon 01-May-00: Thanks to Tollef Fog Heen <tollef@add.no> for some speed
+improvements to the code. His patch included some corrections to my
+english slang. I guess it was time to clean that up. :)
+
+Sun 16-Apr-00: Thanks to Reuben <reuben@moderngroove.com> for giving
+me the info to get mp2 support working right. Also, thanks go to Jussi
+Alanara <jalanara@dc.turkuamk.fi> for asking me to improve the returning
+of error codes.
+
+Fri 31-Mar-00: Although Robert James Kaes's patch has been removed
+with a faster algorithm, I would still like to give him credit for his
+contributions.
+
+Wed 29-Mar-00: Thanks go to Robert James Kaes <rjkaes@flarenet.com>
+for his contribution to the optimizations in rotate_char_array.
